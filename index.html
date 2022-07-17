@@ -99,7 +99,7 @@ H5P.DragNBarElement=function(s,o){function t(t,i,e){var n=this;o.call(this),this
 
 });
             var iframeVideo = H5P.instances[0];
-            iframeVideo.ontimeupdate = function(){myFunction()};
+            iframeVideo.video.ontimeupdate = function(){myFunction()};
 
             function myFunction () {
                 console.log(iframeVideo.currentTime);
